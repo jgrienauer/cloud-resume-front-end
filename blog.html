@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Live Resume :: Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/biniamearly.com/assets/vendors/%40fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/biniamearly.com/assets/css/live-resume.css">
+</head>
+
+<body>
+    <header>
+        <nav class="collapsible-nav" id="collapsible-nav">
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="blog.html" class="nav-link active">BLOG</a>
+        </nav>
+        <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+            data-target="collapsible-nav"><img src="https://s3.amazonaws.com/biniamearly.com/images/hamburger.svg" alt="hamburger"></button>
+    </header>
+    
+        <main>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Navigating the AWS Wilderness: Building a Secure and Dynamic Resume Website</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        line-height: 1.6;
+                        margin: 30px;
+                    }
+            
+                    h2 {
+                        margin-top: 30px;
+                    }
+                    p{margin-left: 30px;
+                    }
+                    section {
+                        font-size: 0.9em;
+                    }
+                </style>
+            </head>
+            <body>
+            
+                <h1>Navigating the AWS Wilderness: Building a Secure and Dynamic Resume Website</h1>
+            
+                <section>
+                    <h2>The Challenge Ahead</h2>
+                    <p>
+                        Embarking on the journey of creating a resume website was not just about showcasing my professional
+                        achievements but also an opportunity to delve into the intricate world of AWS services. The challenge
+                        outlined a holistic approach, from HTML and CSS styling to deploying on AWS S3, securing with HTTPS, and
+                        integrating a visitor counter using DynamoDB and Lambda. This blog post aims to share the insights gained,
+                        the lessons learned, and the emotions experienced throughout this comprehensive project.
+                    </p>
+                </section>
+            
+                <section>
+                    <h2>Setting the Foundation</h2>
+                    
+                    <p>
+                        What and Why: The initial step involved crafting an HTML resume and styling it with CSS. This stage served as the foundation
+                        for the entire project, representing the core content and aesthetics of the website. It was crucial to strike a
+                        balance between professionalism and creativity, ensuring an effective representation of my skills and
+                        experiences.
+                    </p>
+        
+                    <p>
+                        Lessons Learned: While HTML and CSS may seem familiar, the challenge highlighted the importance of clean and semantic code.
+                        This not only enhanced the website's accessibility but also laid the groundwork for future integrations.
+                    </p> 
+                </section>
+            <section>
+                <h2>Taking Flight on AWS S3</h2>
+        <p></p>
+                <p>
+                    What and Why: Deploying the HTML resume on an S3 bucket provided a scalable and cost-effective solution for hosting static
+                    websites. The simplicity of S3 was evident in its ease of setup and configuration, making it an ideal choice
+                    for static content deployment.
+                </p>
+    
+                <p>
+                    Lessons Learned: Understanding S3's static website hosting capabilities revealed the power of simplicity. The challenge was not
+                    merely about deployment but comprehending the underlying architecture and optimizing the bucket settings for
+                    website hosting.
+                </p>
+            </section>
+        
+            <section>
+                <h2>Securing with CloudFront and Certificate Manager</h2>
+        <p></p>
+           
+                <p>
+                    What and Why: Security took center stage with the integration of CloudFront and AWS Certificate Manager. CloudFront not only
+                    improved website performance through content delivery but also facilitated the implementation of HTTPS, a
+                    crucial factor for building trust and safeguarding user data.
+                </p>
+        
+                <p>
+                    Lessons Learned: Navigating the CloudFront settings illuminated the significance of a Content Delivery Network (CDN) in
+                    enhancing website speed. Implementing HTTPS via Certificate Manager was not just a security measure but a
+                    step towards providing a seamless and trustworthy user experience.
+                </p>
+            </section>
+        
+            <section>
+                <h2>DNS Magic with Namecheap and Route 53</h2>
+        <p></p>
+              
+                <p>
+                    What and Why: Pointing a custom domain to CloudFront using Namecheap and Route 53 was the next logical step. A personalized
+                    domain like fnamelname.com added a professional touch to the resume website and improved brand recognition.
+                </p>
+        
+               
+                <p>
+                    Lessons Learned: Working with different domain registrars and DNS services revealed the intricacies of domain management. The
+                    seamless integration of Route 53 and Namecheap showcased the importance of a well-coordinated domain setup.
+                </p>
+            </section>
+        
+            <section>
+                <h2>Adding Life with JavaScript</h2>
+        <p></p>
+           
+                <p>
+                    What and Why: Integrating a visitor counter with JavaScript brought interactivity to the resume website. Beyond aesthetics,
+                    the counter was a practical demonstration of web development, and it laid the groundwork for the subsequent
+                    integration with AWS services.
+                </p>
+        
+                
+                <p>
+                    Lessons Learned: Writing JavaScript for dynamic web elements was a reminder of the language's versatility. The visitor counter
+                    was not just a number; it symbolized the dynamic nature of web applications and the ability to interact with
+                    users in real-time.
+                </p>
+            </section>
+        
+            <section>
+                <h2>DynamoDB and the Power of NoSQL</h2>
+        <p></p>
+                
+                <p>
+                    What and Why: DynamoDB, AWS's NoSQL database, was chosen to store and retrieve visitor counts. This decision was driven by
+                    DynamoDB's scalability, low-latency performance, and seamless integration with Lambda.
+                </p>
+        
+              
+                <p>
+                    Lessons Learned: Configuring DynamoDB for this project emphasized the flexibility of NoSQL databases. The schema-less design
+                    allowed for quick adaptation to changing requirements, and the integration with Lambda demonstrated the power
+                    of serverless computing.
+                </p>
+            </section>
+        
+            <section>
+                <h2>Building the Bridge - API with Lambda and API Gateway</h2>
+        <p></p>
+            
+                <p>
+                    What and Why: To maintain separation of concerns, an API layer was introduced. AWS Lambda, coupled with API Gateway,
+                    provided a serverless architecture to handle requests from the web app and interact with DynamoDB.
+                </p>
+        
+               
+                <p>
+                    Lessons Learned: The creation of an API emphasized the importance of modular design. The serverless approach showcased the
+                    efficiency of scaling based on demand and the cost-effectiveness of paying only for actual usage.
+                </p>
+            </section>
+        
+            <section>
+                <h2>Python in the Cloud</h2>
+        <p></p>
+                
+                <p>
+                    What and Why: Python was the language of choice for the Lambda function. Its readability and extensive support for AWS
+                    services made it a natural fit for the backend logic.
+                </p>
+        
+                
+                <p>
+                    Lessons Learned: Writing Python code for Lambda was a testament to the language's readability and AWS SDK's comprehensive
+                    support. The seamless integration of Python with AWS services demonstrated the power of leveraging familiar
+                    languages in the cloud.
+                </p>
+            </section>
+        
+            <section>
+                <h2>Continuous Integration and Deployment</h2>
+        <p></p>
+            
+                <p>
+                    What and Why: To streamline development workflows, continuous integration and deployment were implemented. GitHub
+                    repositories for backend and frontend code facilitated automated updates whenever changes were made.
+                </p>
+        
+          
+                <p>
+                    Lessons Learned: Implementing CI/CD was a transformative experience. It ensured that updates to the website and API were
+                    automated, reducing the risk of manual errors and improving overall development efficiency.
+                </p>
+            </section>
+        
+            <section>
+                <h2>Reflections on the Journey</h2>
+        <p></p>
+            
+                <p>
+                    Insights Gained: The journey through this comprehensive project provided insights into the interconnected world of web
+                    development and cloud services. Each step, from basic HTML to intricate serverless architectures,
+                    contributed to a deeper understanding of building robust and scalable applications.
+                </p>
+        
+           
+                <p>
+                    Challenges Faced: While the challenge was rewarding, it wasn't without its hurdles. Configuring services, troubleshooting
+                    errors, and ensuring seamless integration required meticulous attention to detail. The complexity of the task
+                    reinforced the importance of patience and perseverance in the face of challenges.
+                </p>
+        
+              
+                <p>
+                    Personal Growth: The project sparked personal growth, not just in technical skills but in the ability to tackle complex
+                    problems systematically. The exposure to a wide array of AWS services broadened my perspective on cloud
+                    computing and its applications in modern web development.
+                </p>
+        
+
+                <p>
+                    Final Thoughts: Building a secure and dynamic resume website on AWS was more than just a technical challenge; it was a
+                    journey of exploration and growth. The amalgamation of web development and cloud services showcased the power
+                    of synergies, emphasizing the need for continuous learning and adaptation in the ever-evolving landscape of
+                    technology.
+                </p>
+            </section>
+        
+            <h2>A Digital Identity in the Clouds</h2>
+        
+            <p>
+                As the resume website takes its place on the cloud, it serves as not just a testament to professional
+                achievements but a living artifact of a journey through the AWS wilderness. The lessons learned, challenges
+                faced, and personal growth achieved are etched into the digital fabric of the website, ready to inspire future
+                endeavors in the realm of web development and cloud computing.
+            </p>
+        
+        </body>
+            <footer>Live Resume @ <a href="https://www.bootstrapdash.com" target="_blank" rel="noopener noreferrer">BootstrapDash</a>. All Rights Reserved 2020</footer>
+        </main>
+    </div>
+    <script src="https://s3.amazonaws.com/biniamearly.com/assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="https://s3.amazonaws.com/biniamearly.com/assets/vendors/%40popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="https://s3.amazonaws.com/biniamearly.com/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://s3.amazonaws.com/biniamearly.com/assets/js/live-resume.js"></script>
+</body>
+
+</html>
